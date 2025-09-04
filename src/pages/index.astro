@@ -82,28 +82,30 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 <!-- UDDANNELSE -->
 <section id="edu" class="mx-auto max-w-6xl px-6 py-20">
-  <div class="relative mb-6">
-    <span class="scribble absolute -top-4 left-1 text-red-500 text-sm">skole & KEA</span>
+  <div class="relative mb-6 flex items-start gap-12">
+    <span class="scribble absolute -top-4 left-1 text-red-500 text-sm">KEA</span>
     <h2 class="text-5xl md:text-6xl font-extrabold uppercase">MIN UDDANNELSE</h2>
   </div>
-  <div class="grid gap-8 md:grid-cols-[minmax(220px,320px)_1fr] items-start">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
     <div>
-      <Image src={thumbsup} alt="Hund og Ella" class="rounded-2xl border border-neutral-800" />
+      <img 
+        src="/src/assets/images/uddannelse.jpg" 
+        alt="Uddannelse billede" 
+        class="w-full rounded-2xl object-cover border border-neutral-800"
+      />
     </div>
-    <ul class="space-y-4 text-neutral-300">
+    <ul class="space-y-6 text-neutral-300">
       <li>
-        <strong>KEA Multimediedesign</strong><br />
-        2023–2025<br />
-        Lærer om design, web, brugeroplevelse og digital produktion.
+        <strong>1. semester</strong><br />
+        På første semester blev jeg introduceret til multimediedesign som fagområde. Jeg arbejdede med grundlæggende designprincipper, typografi, farvelære og komposition, samtidig med at jeg lærte at bruge centrale værktøjer som Adobe-programmerne. Her fik jeg også den første erfaring med simple websites og forståelsen af, hvordan design og brugeroplevelse hænger sammen.
       </li>
       <li>
-        <strong>HF, VUC</strong><br />
-        2021–2023<br />
-        Fokus på samfundsfag, dansk og engelsk.
+        <strong>2. semester</strong><br />
+        På andet semester kom der mere fokus på udviklingsprocesser og samarbejde med rigtige kunder. Her lærte jeg at arbejde med metoder som Double Diamond og at gennemføre research, tests og evalueringer som en del af designprocessen. Jeg arbejdede både med branding, visuel identitet, webudvikling (Astro, Supabase m.m.) og indholdsproduktion, hvilket gav mig en bred forståelse for at skabe helhedsorienterede digitale løsninger.
       </li>
       <li>
-        <strong>Selvstudie</strong><br />
-        Lærer løbende nye værktøjer og teknologier.
+        <strong>3. semester</strong><br />
+        Nu er jeg på tredje semester og har valgt valgfaget Digital Design. Her får jeg mulighed for at fordybe mig i det visuelle og æstetiske, samtidig med at jeg videreudvikler mine færdigheder inden for UX, UI og digitale prototyper. Det giver mig en chance for at kombinere mine kreative interesser med de tekniske kompetencer, jeg har bygget op på de første semestre.
       </li>
     </ul>
   </div>
