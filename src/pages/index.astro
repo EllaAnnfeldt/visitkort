@@ -45,34 +45,37 @@ import thumbsup from "../assets/images/thumbsup.png";
 </section>
 
 <!-- OM ELLA -->
-<section id="about" class="mx-auto max-w-6xl px-6 py-20">
-<div class="relative mb-6">
-<span class="scribble absolute -top-5 left-1 text-red-500 text-sm">om</span>
-<h3 class="text-4xl md:text-5xl font-extrabold uppercase">ELLA ANNFELDT</h3>
-</div>
-<div class="grid gap-8 md:grid-cols-2">
-<p class="text-neutral-300">
-Jeg har en analytisk men legende designtilgang – fra research til pixelperfekt UI. Jeg arbejder brugerdrevet,
-iterativt og elsker samarbejdet i kreative teams. Jeg trives, hvor æstetik, funktion og performance mødes.
-</p>
-<p class="text-neutral-300">
-Nørder bl.a. typografi, layout og mikrointeraktioner. Værktøjskasse: Figma, Tailwind/HTML, lidt JS og motion.
-Jeg tester, måler og forbedrer – og lærer hurtigt nye værktøjer, når opgaven kræver det.
-</p>
-</div>
+<section id="about" class="mx-auto max-w-6xl px-6 py-20 mt-35">
+  <div class="relative flex flex-row items-start gap-8 mb-6">
+    <div class="flex flex-col justify-start">
+      <span class="scribble absolute -top-5 left-0 text-red-500 text-4xl italic">om</span>
+      <h3 class="text-[7vw] md:text-[5vw] font-extrabold uppercase leading-none">ELLA<br />ANNFELDT</h3>
+    </div>
+    <div class="w-[380px] h-[260px] md:w-[800px] md:h-[320px] ml-8">
+      <img src="/src/assets/images/svg4.svg" alt="Portræt" class="object-cover w-full h-full rounded-2xl border border-neutral-800" />
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 gap-12 mt-8">
+    <p class="text-neutral-300 text-lg">
+      Når jeg ikke arbejder med design og digitale projekter, finder jeg stor glæde i de små øjeblikke i hverdagen. Jeg elsker at fange stemninger gennem mit mobilkamera – uanset om det er et spontant øjeblik i byen eller et særligt lysindfald. For mig handler det ikke om at have det rigtige udstyr, men om at se og bevare de øjeblikke, der skaber stemning og fortælling.
+    </p>
+    <p class="text-neutral-300 text-lg">
+      Musik er også en vigtig del af mit liv. Det giver mig både energi og ro, og jeg lader mig ofte inspirere af rytmer og stemninger, når jeg arbejder kreativt. Og så elsker jeg at koble af med vennerne – gerne over en kold øl – hvor gode samtaler og grin giver mig ny energi og balance i hverdagen.
+    </p>
+  </div>
 </section>
 
 <!-- INSPIRATION -->
 <section id="inspo" class="mx-auto max-w-6xl px-6 py-16">
-<div class="relative mb-6">
-<span class="scribble absolute -top-4 left-1 text-red-500 text-sm">proces</span>
-<h2 class="text-5xl md:text-6xl font-extrabold uppercase">INSPIRATION</h2>
-</div>
-<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
-{Array.from({ length: 18 }).map((_, i) => (
-<div class="aspect-square rounded-md border border-neutral-800 bg-neutral-800" />
-))}
-</div>
+  <div class="flex flex-col items-end mb-6 relative">
+    <span class="scribble absolute -top-2 left-0 text-red-500 text-4xl italic">pinterest</span>
+    <h3 class="text-[7vw] md:text-[5vw] font-extrabold uppercase leading-none">INSPIRATION</h3>
+  </div>
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+    {Array.from({ length: 18 }).map((_, i) => (
+      <div class="aspect-square rounded-md border border-neutral-800 bg-neutral-800" />
+    ))}
+  </div>
 </section>
 
 <!-- UDDANNELSE -->
