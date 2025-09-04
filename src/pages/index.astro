@@ -5,11 +5,142 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+
+<MainLayout title="PORTFOLIO ELLA ">
+<main class="relative min-h-screen bg-neutral-900 text-neutral-100">
+<!-- VENSTRE SIDEBAR -->
+<aside class="fixed left-0 top-0 h-full w-10 md:w-12 bg-neutral-950/60 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/40 border-r border-neutral-800 hidden sm:flex flex-col items-center py-4 gap-4 z-40">
+<a href="#top" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Top"></a>
+<a href="#intro" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Intro"></a>
+<a href="#about" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Om"></a>
+<a href="#inspo" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Inspiration"></a>
+<a href="#edu" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Uddannelse"></a>
+<a href="#work" class="w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Erfaring"></a>
+<a href="#contact" class="mt-auto w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Kontakt"></a>
+</aside>
+
+<!-- CONTENT WRAP (med venstre gutter pga sidebar) -->
+<div id="top" class="pl-0 sm:pl-12">
+<!-- HERO -->
+<header class="flex justify-center items-center h-screen relative bg-neutral-900">
+  <span class="scribble text-red-500 text-8xl font-bold italic absolute left-[2vw] top-[30vh] z-10">Kreativ</span>
+  <h1 class="text-[18vw] font-extrabold leading-none tracking-tight text-neutral-100 uppercase drop-shadow text-center w-full relative z-0">
+    PORTFOLIO
+  </h1>
+  <span class="scribble text-red-500 text-8xl font-bold italic absolute right-[6vw] top-[58vh] z-10">Ella</span>
+</header>
+
+<!-- INTRODUKTION -->
+<section id="intro" class="mx-auto max-w-6xl px-6 space-y-8 pb-16">
+<div class="grid gap-8 md:grid-cols-[minmax(220px,320px)_1fr] items-start">
+<!-- lille billedeblok i venstre side (placeholder) -->
+<div class="space-y-6">
+<div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
+<div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
+<div class="aspect-[16/10] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
+</div>
+<div class="relative">
+<h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-3 uppercase">INTRODUKTION</h2>
+<span class="scribble absolute -top-3 left-2 text-red-500 text-sm">mig</span>
+<p class="max-w-prose text-neutral-300">
+Hej! Jeg hedder Ella Annfeldt og studerer Multimediedesign på KEA. Jeg brænder for grafisk design, web og motion – og elsker at gøre komplekse idéer enkle og brugbare. Her kan du se et udsnit af min proces, min uddannelse og erfaring.
+</p>
+</div>
+</div>
+</section>
+
+<!-- OM ELLA -->
+<section id="about" class="mx-auto max-w-6xl px-6 py-20">
+<div class="relative mb-6">
+<span class="scribble absolute -top-5 left-1 text-red-500 text-sm">om</span>
+<h3 class="text-4xl md:text-5xl font-extrabold uppercase">ELLA ANNFELDT</h3>
+</div>
+<div class="grid gap-8 md:grid-cols-2">
+<p class="text-neutral-300">
+Jeg har en analytisk men legende designtilgang – fra research til pixelperfekt UI. Jeg arbejder brugerdrevet,
+iterativt og elsker samarbejdet i kreative teams. Jeg trives, hvor æstetik, funktion og performance mødes.
+</p>
+<p class="text-neutral-300">
+Nørder bl.a. typografi, layout og mikrointeraktioner. Værktøjskasse: Figma, Tailwind/HTML, lidt JS og motion.
+Jeg tester, måler og forbedrer – og lærer hurtigt nye værktøjer, når opgaven kræver det.
+</p>
+</div>
+</section>
+
+<!-- INSPIRATION -->
+<section id="inspo" class="mx-auto max-w-6xl px-6 py-16">
+<div class="relative mb-6">
+<span class="scribble absolute -top-4 left-1 text-red-500 text-sm">proces</span>
+<h2 class="text-5xl md:text-6xl font-extrabold uppercase">INSPIRATION</h2>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+{Array.from({ length: 18 }).map((_, i) => (
+<div class="aspect-square rounded-md border border-neutral-800 bg-neutral-800" />
+))}
+</div>
+</section>
+
+<!-- UDDANNELSE -->
+<section id="edu" class="mx-auto max-w-6xl px-6 py-20">
+  <div class="relative mb-6">
+    <span class="scribble absolute -top-4 left-1 text-red-500 text-sm">skole & KEA</span>
+    <h2 class="text-5xl md:text-6xl font-extrabold uppercase">MIN UDDANNELSE</h2>
+  </div>
+  <div class="grid gap-8 md:grid-cols-[minmax(220px,320px)_1fr] items-start">
+    <div>
+      <Image src={thumbsup} alt="Hund og Ella" class="rounded-2xl border border-neutral-800" />
+    </div>
+    <ul class="space-y-4 text-neutral-300">
+      <li>
+        <strong>KEA Multimediedesign</strong><br />
+        2023–2025<br />
+        Lærer om design, web, brugeroplevelse og digital produktion.
+      </li>
+      <li>
+        <strong>HF, VUC</strong><br />
+        2021–2023<br />
+        Fokus på samfundsfag, dansk og engelsk.
+      </li>
+      <li>
+        <strong>Selvstudie</strong><br />
+        Lærer løbende nye værktøjer og teknologier.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ARBEJDSERFARING -->
+<section id="work" class="mx-auto max-w-6xl px-6 py-20">
+  <div class="relative mb-6">
+    <span class="scribble absolute -top-4 left-1 text-red-500 text-sm">Kommerciel erfaring</span>
+    <h2 class="text-5xl md:text-6xl font-extrabold uppercase">ARBEJDSERFARING</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8 text-neutral-300">
+    <div>
+      <strong>Komm. praktik</strong><br />
+      Kommunikationsopgaver, SoMe, grafisk materiale.
+    </div>
+    <div>
+      <strong>Grafisk design</strong><br />
+      Frivilligt arbejde, logoer, flyers, SoMe-grafik.
+    </div>
+    <div>
+      <strong>SEO & QA</strong><br />
+      Hjælper med søgeoptimering og kvalitetssikring af webprojekter.
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<footer id="contact" class="mx-auto max-w-6xl px-6 py-20">
+  <h2 class="text-[10vw] md:text-8xl font-extrabold uppercase text-neutral-700 tracking-tight mb-8">KONTAKT</h2>
+  <div class="flex gap-6 text-2xl">
+    <a href="mailto:ella@annfeldt.dk" aria-label="Mail"><svg class="w-8 h-8" fill="currentColor"><!-- mail ikon --></svg></a>
+    <a href="https://www.instagram.com/" aria-label="Instagram"><svg class="w-8 h-8" fill="currentColor"><!-- insta ikon --></svg></a>
+    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><svg class="w-8 h-8" fill="currentColor"><!-- linkedin ikon --></svg></a>
+  </div>
+</footer>
+
 </MainLayout>
+
