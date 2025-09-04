@@ -6,7 +6,6 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
-
 <MainLayout title="PORTFOLIO ELLA ">
 <main class="relative min-h-screen bg-neutral-900 text-neutral-100">
 <!-- VENSTRE SIDEBAR -->
@@ -20,34 +19,29 @@ import thumbsup from "../assets/images/thumbsup.png";
 <a href="#contact" class="mt-auto w-6 h-6 rounded bg-neutral-800/70 hover:bg-neutral-700" aria-label="Kontakt"></a>
 </aside>
 
-<!-- CONTENT WRAP (med venstre gutter pga sidebar) -->
-<div id="top" class="pl-0 sm:pl-12">
-<!-- HERO -->
-<header class="flex justify-center items-center h-screen relative bg-neutral-900">
-  <span class="scribble text-red-500 text-8xl font-bold italic absolute left-[2vw] top-[30vh] z-10">Kreativ</span>
-  <h1 class="text-[18vw] font-extrabold leading-none tracking-tight text-neutral-100 uppercase drop-shadow text-center w-full relative z-0">
-    PORTFOLIO
-  </h1>
-  <span class="scribble text-red-500 text-8xl font-bold italic absolute right-[6vw] top-[58vh] z-10">Ella</span>
-</header>
-
 <!-- INTRODUKTION -->
-<section id="intro" class="mx-auto max-w-6xl px-6 space-y-8 pb-16">
-<div class="grid gap-8 md:grid-cols-[minmax(220px,320px)_1fr] items-start">
-<!-- lille billedeblok i venstre side (placeholder) -->
-<div class="space-y-6">
-<div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
-<div class="aspect-[4/3] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
-<div class="aspect-[16/10] rounded-2xl border border-neutral-800 bg-neutral-800"></div>
-</div>
-<div class="relative">
-<h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-3 uppercase">INTRODUKTION</h2>
-<span class="scribble absolute -top-3 left-2 text-red-500 text-sm">mig</span>
-<p class="max-w-prose text-neutral-300">
-Jeg hedder Ella og studerer Multimediedesign på KEA. Jeg brænder for at skabe digitale løsninger, hvor design, brugeroplevelse og strategi mødes. Med erfaring inden for visuel identitet, webudvikling og indholdsproduktion arbejder jeg målrettet på at udvikle koncepter, der engagerer og gør en forskel.
-</p>
-</div>
-</div>
+<section id="intro" class="mx-auto max-w-6xl px-6 pb-16">
+  <div class="relative flex flex-col items-center justify-center min-h-[420px] md:min-h-[500px]">
+    <!-- Øverste venstre billede -->
+    <img src="/src/assets/images/svg1.svg" alt="Billede 1"
+      class="absolute top-0 left-0 w-[180px] h-[120px] md:w-[260px] md:h-[160px] rounded-2xl border border-neutral-800 object-cover" />
+    
+	  <!-- Øverste højre billede -->
+    <img src="/src/assets/images/svg2.svg" alt="Billede 2"
+      class="absolute top-10 right-[-70px] w-[220px] h-[120px] md:w-[320px] md:h-[160px] rounded-2xl border border-neutral-800 object-cover" />
+    
+	 <img src="/src/assets/images/svg3.svg" alt="Billede 3"
+	 	class="absolute bottom-[-100px] left-0 w-[260px] h-[120px] md:w-[499px] md:h-[190px] rounded-2xl border border-neutral-800 object-cover" />
+   
+  <!-- Tekstindhold centreret -->
+    <div class="relative flex flex-col items-center justify-center text-center mx-auto pt-12 md:pt-20">
+      <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-3 uppercase">INTRODUKTION</h2>
+      <span class="scribble absolute italic right-23 -bottom-[-130px] text-red-500 text-xl md:text-3xl">mig</span>
+      <p class="max-w-prose text-neutral-300 mt-8">
+        Jeg hedder Ella og studerer Multimediedesign på KEA. Jeg brænder for at skabe digitale løsninger, hvor design, brugeroplevelse og strategi mødes. Med erfaring inden for visuel identitet, webudvikling og indholdsproduktion arbejder jeg målrettet på at udvikle koncepter, der engagerer og gør en forskel.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- OM ELLA -->
