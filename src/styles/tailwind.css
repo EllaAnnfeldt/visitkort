@@ -1,13 +1,7 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/forms';
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
-
-@theme {
-  /* Her tilføjes theme variable // tokens */
-}
 
 @layer base {
   *,
@@ -19,9 +13,14 @@
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
+  .scribble {
+    font-family: "Anton", sans-serif;
+  }
+
+  .handwriting {
+    font-family: "Nothing You Could Do", cursive;
+  }
 }
