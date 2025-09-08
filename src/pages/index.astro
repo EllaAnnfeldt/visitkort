@@ -4,7 +4,7 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
-import svg1 from '../assets/images/svg1.svg';
+
 ---
 
 <MainLayout title="PORTFOLIO ELLA ">
@@ -14,7 +14,7 @@ import svg1 from '../assets/images/svg1.svg';
 <section id="intro" class="mx-auto max-w-6xl px-6 pb-16">
   <div class="relative flex flex-col items-center justify-center min-h-[420px] md:min-h-[500px]">
     <!-- Øverste venstre billede -->
-<img src={svg1.src} alt="ella sidder med mad" ... />
+    <img src="/assets/images/svg1.svg" alt="ella sidder med mad"
       class="absolute top-0 left-0 w-[180px] h-[120px] md:w-[260px] md:h-[160px] rounded-2xl border border-neutral-800 object-cover" />
     
 	  <!-- Øverste højre billede -->
